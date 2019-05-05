@@ -1,0 +1,18 @@
+<div class="container">
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Longitud de línea" value=20 #count>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width ">
+          <textarea matInput placeholder="Inserte texto a formatear"  #text class="full-height"></textarea>
+        </mat-form-field>
+      </form>
+      <!-- <button mat-stroked-button (click)="formatter(text.value, count.value)">Formatear</button> -->
+      <button class="btn btn-primary mb-5" (click)="formatter(text.value, count.value)">Formatear</button>
+
+      <div >
+        <p *ngFor="let line of textList">{{line}}</p>
+      </div>
+</div>
+
