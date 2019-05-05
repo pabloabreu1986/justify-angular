@@ -13,7 +13,7 @@ export class JustifierService {
 
 
   getTextJustify(text: string, count: number) {
-    return this.http.get(`http://localhost:3000/getJustified/${text}/${count}`);
+    return this.http.get(`https://justifier.herokuapp.com/getJustified/${text}/${count}`);
   }
 
 
